@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.anirak.dbAccess;
+package com.anirak.dbAccess.Relational;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

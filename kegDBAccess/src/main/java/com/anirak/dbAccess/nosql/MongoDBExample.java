@@ -1,10 +1,11 @@
 /**
  * 
  */
-package com.anirak.dbAccess;
+package com.anirak.dbAccess.nosql;
 
 import org.bson.Document;
 
+import com.anirak.dbAccess.DBConnectInfo;
 import com.mongodb.DB;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoCredential;
@@ -60,7 +61,7 @@ public class MongoDBExample
 		System.out.println("Collection created successfully");
 	}
 
-	public void ConnectToDB(DBConnectInfo connectInfo)
+	public MongoDatabase ConnectToDB(DBConnectInfo connectInfo)
 	{
 		// Creating a Mongo client
 		MongoClient mongo = new MongoClient("localhost", 27017);
@@ -74,6 +75,7 @@ public class MongoDBExample
 		// Accessing the database
 		MongoDatabase database = mongo.getDatabase("myDb");
 		System.out.println("Credentials ::" + credential);
+		return database;
 	}
 
 }
