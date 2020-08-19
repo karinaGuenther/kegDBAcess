@@ -18,6 +18,16 @@ public class DbAccessTestng
 	{
 	}
 
+	@Test
+	public void testConnection()
+	{
+		MongoDBExample dbtest = new MongoDBExample();
+		DBConnectInfo dbInfo = new DBConnectInfo();
+
+		connected = dbtest.ConnectToDB();
+
+	}
+
 	@AfterMethod
 	public void afterMethod()
 	{
