@@ -19,7 +19,7 @@ import com.mongodb.client.MongoDatabase;
 public class MongoDBExample
 {
 
-	public void insertDoc()
+	public void insert()
 	{
 
 		// Creating a Mongo client

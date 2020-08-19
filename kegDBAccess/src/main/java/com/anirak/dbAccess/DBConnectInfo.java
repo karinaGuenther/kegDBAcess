@@ -10,7 +10,6 @@ import lombok.Setter;
  * @author Owner
  *
  */
-
 public class DBConnectInfo
 {
 	@Getter
