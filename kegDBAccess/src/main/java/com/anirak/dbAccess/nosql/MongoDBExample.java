@@ -16,6 +16,7 @@ import com.mongodb.client.MongoDatabase;
  * @author Owner
  *
  */
+// TODO add slf4j to this. I do have lombok but it's not building for some reason.
 public class MongoDBExample
 {
 
